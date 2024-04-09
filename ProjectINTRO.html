@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ h1Content: 'INTRO TO WILDLIFE IN SRI LANKA', h3Content: 'INFOTABLE', pContent: 'Having been introduced to these captivating visuals and brief descriptions of Horton Plains National Park, Bundala National Park, and Minneriya National Park, let\'s shift gears to a convenient summary table. This table will neatly outline the key features of these parks, simplifying their unique offerings—be it Horton\'s stunning landscapes, Bundala\'s bird haven, or Minneriya\'s famous elephant gatherings, hence offering a comprehensive snapshot of these natural treasures within Sri Lanka\'s rich wildlife tapestry.' }">
+  <head>
+    <link rel="stylesheet" href="ProjectINTROCSS.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/WDOS/WDOS Project/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/WDOS/WDOS Project/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>ProjectINTRO</title>
+    <h1 x-text="h1Content" contenteditable="true"></h1>INTRO TO WILDLIFE IN SRI LANKA</h1>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li>
+          <a
+            title="Takes you to home page!"
+            href="/WDOS/WDOS Project/wdosproject.html"
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectINTRO.html" class="active"
+            >INTRO</a
+          >
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectCONSERVATION.html">CONSERVATION</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectLEOPARD.html">LEOPARD</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectANIMALS.html">ANIMALS</a>
+          <ul class="AnimalOptions">
+            <li><a href="/WDOS/WDOS Project/ProjectYALA.html">YALA</a></li>
+
+            <li>
+              <a href="/WDOS/WDOS Project/ProjectWILPATTU.html">WILPATTU</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav search-bar">
+          <form action="/search" method="get">
+            <input
+              type="search"
+              id="search"
+              name="q"
+              placeholder="SEARCH"
+            /><br />
+
+            <input
+              type="image"
+              src="/WDOS/WDOS Project/search 16.png"
+              alt="Submit"
+              class="submit"
+              onclick="searchTopic()"
+            />
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    <picture>
+      <source
+        media="(max-width:500px)"
+        srcset="
+          https://media.tacdn.com/media/attractions-splice-spp-674x446/08/39/59/26.jpg
+        "
+        class="round"
+      />
+      <source
+        media="(max-width: 700px)"
+        srcset="
+          https://overatours.com/wp-content/uploads/2021/11/Horton-Plains-Trek-Activities-in-Nuwara-Eliya.jpg
+        "
+        class="round"
+      />
+      <img src="/WDOS/WDOS Project/intro image 1 2nd attempt (2).jpg" />
+    </picture>
+    <p class="quickbox" x-text="pContent" contenteditable="true">
+      <b>Horton Plains National Park,</b> nestled in Sri Lanka's central
+      highlands, captivates with its ethereal beauty. <br />
+      This UNESCO World Heritage Site entices visitors with its breathtaking
+      landscapes of montane grasslands, mist-laden forests, and endemic
+      biodiversity. <br />
+      The park's iconic World's End viewpoint offers a dramatic precipice
+      showcasing panoramic vistas across the verdant valleys below. <br />
+      A sanctuary for rare species like the Sri Lankan sambar deer and
+      purple-faced langur, it also hosts a plethora of birdlife, including
+      endemic and migratory species. <br />
+      Horton Plains embodies a serene yet vibrant ecosystem, inviting
+      exploration and enchantment amid its natural wonders.
+    </p>
+    <br /><br />
+    <picture>
+      <source
+        media="(max-width:500px)"
+        srcset="
+          https://srilankatourisminfo.com/wp-content/uploads/2020/01/bundala-national-park-1.jpg
+        "
+        class="round" />
+      <source
+        media="(max-width: 700px)"
+        srcset="
+          https://acmetravels.com/wp-content/uploads/2020/08/4635_1024x1024_2013-07-16-20-32-20-870x480-1.jpg
+        "
+        class="round" />
+      <img src="/WDOS/WDOS Project/bundala pc image 2.jpg" class="bundala"
+    /></picture>
+    <p class="small-quickbox" x-text="pContent" contenteditable="true">
+      <b>Bundala National Park,</b> amidst its scenic wetlands and scrublands,
+      shelters diverse wildlife, including the elusive big cats.<br />
+      Amongst its rich biodiversity and tranquil lagoons, these majestic felines
+      roam, embodying the park's allure as a sanctuary for nature's regal
+      predators.
+    </p>
+    <picture>
+      <source
+        media="(max-width:480px)"
+        srcset="
+          https://www.civitatis.com/f/sri-lanka/dambulla/safari-parque-minneriya-589x392.jpg
+        "
+        class="round" />
+      <source
+        media="(max-width: 700px)"
+        srcset="https://duqjpivknq39s.cloudfront.net/2019/03/800x750-27.jpg"
+        class="round" />
+      <img src="/WDOS/WDOS Project/minneriya pc image 1.jpg" class="minneriya"
+    /></picture>
+    <p class="rsmall-quickbox" x-text="pContent" contenteditable="true">
+      <b>Minneriya National Park,</b> a haven nestled in Sri Lanka's heart,
+      mesmerizes with its expansive landscapes and diverse wildlife.<br />Home
+      to the famed "Gathering," it hosts hundreds of elephants converging at its
+      reservoir, showcasing nature's grandeur.
+    </p>
+    <br /><br /><br /><br />
+    <h3>INFOTABLE</h3>
+    <p class="first" x-text="pContent" contenteditable="true">
+      Having been introduced to these captivating visuals and brief descriptions
+      of Horton Plains National Park,<br />
+      Bundala National Park, and Minneriya National Park,<br />
+      let's shift gears to a convenient summary table. This table will neatly
+      outline the key features of these parks,<br />
+      simplifying their unique offerings—be it Horton's stunning landscapes,
+      Bundala's bird haven,<br />
+      or Minneriya's famous elephant gatherings, hence offering a
+      comprehensive<br />
+      snapshot of these natural treasures within<br />
+      Sri Lanka's rich wildlife tapestry.
+    </p>
+    <br /><br /><br /><br />
+    <table class="intro">
+      <thead>
+        <tr>
+          <th><b>HORTON</b></th>
+
+          <th><b>BUNDALA</b></th>
+          <th><b>MINNERIYA</b></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            WORLD'S END: The park features "World's End,"<br />
+            a sheer cliff with a 1,200-meter drop<br />
+            offering breathtaking views across the park and distant valleys.
+          </td>
+          <td>
+            CROCODILE HAVEN: It's a habitat for the estuarine crocodile,<br />
+            giving visitors an opportunity to spot<br />
+            these prehistoric reptiles in their natural environment.
+          </td>
+          <td>
+            THE GATHERING: It's famed for the annual "Gathering,"<br />
+            where hundreds of Sri Lankan elephants congregate<br />
+            around the Minneriya Tank during the dry season, creating a
+            mesmerizing sight.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            BAKER'S FALLS: Visitors can witness the beauty of Baker's Falls,<br />
+            a picturesque waterfall cascading down a rocky cliff within the
+            park.
+          </td>
+          <td>
+            AVIAN PARADISE: Bundala is a renowned birdwatching destination,<br />
+            hosting over 200 avian species, including migratory birds<br />
+            like flamingos, making it a haven for bird enthusiasts.
+          </td>
+          <td>
+            HISTORICAL SIGNIFICANCE: The area around the park<br />
+            holds historical significance, with remnants of ancient<br />
+            civilizations and the nearby<br />
+            Minneriya Tank, which dates back to ancient reservoir systems.
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Horton_Plains_National_Park"
+              class="introtable"
+              >ADDITIONAL INFO ON HORTON</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Bundala_National_Park"
+              class="introtable"
+              >ADDITIONAL INFO ON BUNDALA</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://en.wikipedia.org/wiki/Minneriya_National_Park"
+              class="introtable"
+              >ADDITIONAL INFO ON MINNERIYA</a
+            >
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <script>
+      function searchTopic() {
+        var search = document.getElementById("search").value.toLowerCase();
+        if (search === "yala") {
+          alert("Results for 'YALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectYALA.html", "_blank");
+        } else if (search === "wilpattu") {
+          alert("Results for 'WILPATTU' found!");
+          window.open("/WDOS/WDOS Project/ProjectWILPATTU.html", "_blank");
+        } else if (search === "leopard") {
+          alert("Results for 'LEOPARD' found!");
+          window.open("/WDOS/WDOS Project/ProjectLEOPARD.html", "_blank");
+        } else if (search === "conservation") {
+          alert("Results for 'CONSERVATION' found!");
+          window.open("/WDOS/WDOS Project/ProjectCONSERVATION.html", "_blank");
+        } else if (search === "intro") {
+          alert("Results for 'INTRODUCTION' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "animals") {
+          alert("Results for 'ANIMALS' found!");
+          window.open("/WDOS/WDOS Project/ProjectANIMALS.html", "_blank");
+        } else if (search === "bundala") {
+          alert("Results for 'BUNDALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "horton") {
+          alert("Results for 'HORTON' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "minneriya") {
+          alert("Results for 'MINNERIYA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else {
+          alert("Topic not found!");
+          window.open("https://elgoog.im/terminal/", "_blank");
+        }
+      }
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.8/dist/cdn.min.js"></script>
+    <script>
+      fetch('WildlifeJSON.json')
+          .then(response => response.json())
+          .then(data => {
+              Alpine.store('jsonData', data);
+          });
+  </script>
+  </body>
+  <footer class="footer">
+    <div class="fbody">
+      <p>&copy;WILDLIFE INTRO</p>
+    </div>
+  </footer>
+</html>

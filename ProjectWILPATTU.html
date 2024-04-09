@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="ProjectWILPATTUCSS.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/WDOS/WDOS Project/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/WDOS/WDOS Project/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>ProjectWILPATTU</title>
+    <h1>WILPATTU NATIONAL PARK</h1>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li>
+          <a
+            title="Takes you to home page!"
+            href="/WDOS/WDOS Project/wdosproject.html"
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectINTRO.html">INTRO</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectCONSERVATION.html">CONSERVATION</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectLEOPARD.html">LEOPARD</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectANIMALS.html">ANIMALS</a>
+          <ul class="AnimalOptions">
+            <li><a href="/WDOS/WDOS Project/ProjectYALA.html">YALA</a></li>
+            <li>
+              <a href="/WDOS/WDOS Project/ProjectWILPATTU.html" class="active"
+                >WILPATTU</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav search-bar">
+          <form action="/search" method="get">
+            <input
+              type="search"
+              id="search"
+              name="q"
+              placeholder="SEARCH"
+            /><br />
+            <input
+              type="image"
+              src="/WDOS/WDOS Project/search 16.png"
+              alt="Submit"
+              class="submit"
+              onclick="searchTopic()"
+            />
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <picture>
+      <source
+        media="(max-width:500px)"
+        srcset="
+          https://veronikasadventure.com/wp-content/uploads/wilpattu-national-park-jeep-safari-from-negombo-waikkal-all-inclusive.jpg
+        "
+        class="round" />
+      <source
+        media="(max-width: 700px)"
+        srcset="
+          https://duqjpivknq39s.cloudfront.net/2018/12/wilpattu-800x750.jpg
+        "
+        class="round" />
+      <img class="main" src="/WDOS/WDOS Project/wilpattu (2).jpg"
+    /></picture>
+    <p class="quickbox">
+      Wilpattu National Park, nestled in Sri Lanka's northwest, emerges as a
+      sanctuary of raw wilderness and untamed beauty.<br />
+      Renowned for its expansive landscapes, it encompasses dense forests, open
+      grasslands, and shimmering lakes that house a rich tapestry of
+      wildlife.<br />
+      As one of the island's oldest and largest national parks, Wilpattu boasts
+      a distinct charm,<br />
+      offering glimpses of elusive creatures like the sloth bear and the elusive
+      Sri Lankan leopard amidst its lush terrain.<br />
+      Its ancient history, woven into the park's fabric through archaeological
+      treasures, adds cultural depth to this haven of biodiversity, inviting
+      adventurers to explore its diverse ecosystems and tranquil vistas.
+    </p>
+    <h2>FEATURED ANIMALS</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/Sri_Lankan_sloth_bear"
+          ><picture>
+            <source
+              media="(max-width:500px)"
+              srcset="
+                https://www.internationalanimalrescue.org/sites/default/files/styles/large/public/2022-04/slothbear.india_.emily_.agra_.sep_.2014.photo%20%286%29.jpg?itok=du-su9eY
+              "
+              class="round" />
+            <source
+              media="(max-width: 700px)"
+              srcset="
+                https://i.pinimg.com/736x/ef/f7/50/eff750d9248048c3f0c9abf413437a5c.jpg
+              "
+              class="round" />
+            <img src="/WDOS/WDOS Project/sloth bear.jpg" /></picture
+        ></a>
+        <h3>SRI LANKAN SLOTH BEAR</h3>
+      </div>
+      <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/Wild_water_buffalo">
+          <picture>
+            <source
+              media="(max-width:500px)"
+              srcset="
+                https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bubalus_bubalis_%28water_buffalo%29_calf%2C_looking_at_the_viewer%2C_the_feet_in_a_pond%2C_in_Laos.jpg/500px-Bubalus_bubalis_%28water_buffalo%29_calf%2C_looking_at_the_viewer%2C_the_feet_in_a_pond%2C_in_Laos.jpg
+              "
+              class="round" />
+            <source
+              media="(max-width: 700px)"
+              srcset="
+                https://images.theconversation.com/files/506980/original/file-20230130-15-jtv92r.jpg?ixlib=rb-1.1.0&rect=12%2C146%2C3606%2C2675&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip
+              "
+              class="round" />
+            <img src="/WDOS/WDOS Project/water buffalo.jpg" /></picture
+        ></a>
+        <h3>SRI LANKAN WATER BUFFALO</h3>
+      </div>
+      <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/Painted_stork">
+          <picture>
+            <source
+              media="(max-width:500px)"
+              srcset="
+                https://www.oiseaux-birds.com/ciconiiformes/ciconiides/tantale-indien/tantale-indien-op3.JPG
+              "
+              class="round" />
+            <source
+              media="(max-width: 700px)"
+              srcset="
+                https://s3.animalia.bio/animals/photos/full/1.25x1/iZVrGgUHMYwOk0hdKQho.webp
+              "
+              class="round" />
+            <img src="/WDOS/WDOS Project/painted stork.jpg" /></picture
+        ></a>
+        <h3>SRI LANKAN PAINTED STORK</h3>
+      </div>
+    </div>
+    <p class="rquickbox">
+      Wilpattu National Park embraces a diverse congregation of wildlife,
+      featuring enigmatic sloth bears that roam its dense woodlands, showcasing
+      their endearing yet elusive nature.<br />
+      Among its troves are also the robust water buffalos, seen often near the
+      park's water bodies, emblematic of the harmonious coexistence between land
+      and water.<br />
+      Amidst this haven, the skies grace the painted storks, their vibrant
+      plumage and stately presence painting a picturesque scene as they wade
+      through the park's wetlands.<br />
+      This eclectic mix—sloth bears, water buffalos, and painted storks—embodies
+      the park's allure,<br />
+      offering glimpses into the richness of Wilpattu's diverse habitats and
+      captivating wildlife.
+    </p>
+    <h2>HISTORY</h2>
+    <p class="rquickbox">
+      Wilpattu National Park boasts an ancient legacy steeped in time.<br />
+      Its name, meaning "natural lakes," mirrors its unique landscape, shaped by
+      its numerous villus (lakes).<br />
+      With roots tracing back to the reign of Sri Lanka's kings, Wilpattu served
+      as a royal hunting ground, revered for its abundant wildlife.<br />
+      Over centuries, the park's significance endured, even amid periods of
+      turmoil.<br />
+      Ravaged by the conflict, Wilpattu rejuvenated post-war, reclaiming its
+      stature as a haven for biodiversity.<br />
+      Its resilient history, etched in tales of regal hunts and restoration,
+      echoes through its forests, making Wilpattu not just a sanctuary, but a
+      testament to enduring conservation efforts.
+    </p>
+    <h2>PLACE OF INTEREST</h2>
+    <picture>
+      <source
+        media="(max-width:500px)"
+        srcset="https://farm3.static.flickr.com/2055/2246375610_551be0a193.jpg"
+        class="round" />
+      <source
+        media="(max-width: 700px)"
+        srcset="
+          https://lh6.ggpht.com/_tH77sBC7j-w/TJGt5wmZ4-I/AAAAAAAAAT0/orm_HP76fWU/s640/IMG_0348.jpg
+        "
+        class="round" />
+      <img class="kuru" src="/WDOS/WDOS Project/kuru.jpg"
+    /></picture>
+    <p class="rquickbox">
+      Amidst the expansive canvas of Wilpattu National Park lies a revered
+      gem—Kudiramalai Point.<br />
+      This coastal stretch, blending dense forest and serene lakes with sandy
+      beaches, captivates with its natural grandeur.<br />
+      Known for its panoramic views and diverse habitats, it's a haven for
+      birdlife and a prime spot for wildlife sightings.<br />
+      Kudiramalai, with its archaeological significance and tales of ancient
+      seafaring communities, adds historical allure to its natural beauty.<br />
+      Enveloped in legends and offering glimpses of Sri Lanka's raw wilderness,
+      this iconic area within Wilpattu embodies the park's essence— a
+      convergence of history, biodiversity, and breathtaking landscapes.
+    </p>
+    <script>
+      function searchTopic() {
+        var search = document.getElementById("search").value.toLowerCase();
+
+        if (search === "yala") {
+          alert("Results for 'YALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectYALA.html", "_blank");
+        } else if (search === "wilpattu") {
+          alert("Results for 'WILPATTU' found!");
+          window.open("/WDOS/WDOS Project/ProjectWILPATTU.html", "_blank");
+        } else if (search === "leopard") {
+          alert("Results for 'LEOPARD' found!");
+          window.open("/WDOS/WDOS Project/ProjectLEOPARD.html", "_blank");
+        } else if (search === "conservation") {
+          alert("Results for 'CONSERVATION' found!");
+          window.open("/WDOS/WDOS Project/ProjectCONSERVATION.html", "_blank");
+        } else if (search === "intro") {
+          alert("Results for 'INTRODUCTION' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "animals") {
+          alert("Results for 'ANIMALS' found!");
+          window.open("/WDOS/WDOS Project/ProjectANIMALS.html", "_blank");
+        } else if (search === "bundala") {
+          alert("Results for 'BUNDALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "horton") {
+          alert("Results for 'HORTON' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "minneriya") {
+          alert("Results for 'MINNERIYA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else {
+          alert("Topic not found!");
+          window.open("https://elgoog.im/terminal/", "_blank");
+        }
+      }
+    </script>
+  </body>
+  <footer class="footer">
+    <div class="fbody">
+      <p>&copy;WILDLIFE WILPATTU</p>
+    </div>
+  </footer>
+</html>

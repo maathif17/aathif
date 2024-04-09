@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProjectHOME.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/WDOS/WDOS Project/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/WDOS/WDOS Project/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>ProjectHOME</title>
+</head>
+<body>
+    <h1>HOME OF SRI LANKAN WILDLIFE</h1>
+    <nav>
+        <ul class="nav">
+          <li>
+            <a
+              title="Takes you to home page!"
+              href="/WDOS/WDOS Project/wdosproject.html"
+              class="active"
+              >HOME</a
+            >
+          </li>
+          <li><a href="/WDOS/WDOS Project/ProjectINTRO.html">INTRO</a></li>
+          <li>
+            <a href="/WDOS/WDOS Project/ProjectCONSERVATION.html">CONSERVATION</a>
+          </li>
+          <li>
+            <a href="/WDOS/WDOS Project/ProjectLEOPARD.html">LEOPARD</a>
+          </li>
+          <li>
+            <a href="/WDOS/WDOS Project/ProjectANIMALS.html">ANIMALS</a>
+            <ul class="AnimalOptions">
+              <li><a href="/WDOS/WDOS Project/ProjectYALA.html">YALA</a></li>
+              <li>
+                <a href="/WDOS/WDOS Project/ProjectWILPATTU.html">WILPATTU</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="ProjectLOGIN.html">LOGIN</a></li>
+          <li class="nav search-bar">
+            <form action="/search" method="get">
+              <input
+                type="search"
+                id="search"
+                name="q"
+                placeholder="SEARCH"
+              /><br />
+              <input
+                type="image"
+                src="/WDOS/WDOS Project/search 16.png"
+                alt="Submit"
+                class="submit"
+                onclick="searchTopic()"
+              />
+            </form>
+          </li>
+        </ul>
+      </nav>
+    <div id="jsonDataContainer"></div>
+    <script src="FetchWildlife.js"></script>
+</body>
+<footer class="footer">
+    <div class="fbody">
+      <form id="SubscriptionForm">
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p>&copy;WILDLIFE HOME</p>
+    </div>
+    <script src="Subscription.js"></script>
+  </footer>
+</html>

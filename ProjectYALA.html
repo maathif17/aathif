@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="ProjectYALACSS.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/WDOS/WDOS Project/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/WDOS/WDOS Project/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>ProjectYALA</title>
+    <h1>YALA NATIONAL PARK</h1>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li>
+          <a
+            title="Takes you to home page!"
+            href="/WDOS/WDOS Project/wdosproject.html"
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectINTRO.html">INTRO</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectCONSERVATION.html">CONSERVATION</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectLEOPARD.html">LEOPARD</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectANIMALS.html">ANIMALS</a>
+          <ul class="AnimalOptions">
+            <li>
+              <a href="/WDOS/WDOS Project/ProjectYALA.html" class="active"
+                >YALA</a
+              >
+            </li>
+            <li>
+              <a href="/WDOS/WDOS Project/ProjectWILPATTU.html">WILPATTU</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav search-bar">
+          <form action="/search" method="get">
+            <input
+              type="search"
+              id="search"
+              name="q"
+              placeholder="SEARCH"
+            /><br />
+            <input
+              type="image"
+              src="/WDOS/WDOS Project/search 16.png"
+              alt="Submit"
+              class="submit"
+              onclick="searchTopic()"
+            />
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <picture>
+      <source
+        media="(max-width:500px)"
+        srcset="
+          https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkmagze5ezw-oD5ZF3bDXBxyIVWa_tZvBtw&usqp=CAU
+        "
+        class="round" />
+      <source
+        media="(max-width: 700px)"
+        srcset="
+          https://www.trawell.in/admin/images/upload/1894272Yala_Jeep_Safari.jpg
+        "
+        class="round" />
+      <img
+        class="main"
+        src="/WDOS/WDOS Project/yalamainimage-ezgif.com-webp-to-jpg-converter (5).jpg"
+    /></picture>
+    <p class="quickbox">
+      <b>Yala National Park</b> in Sri Lanka is a biodiverse haven, featuring
+      varied landscapes—forests, grasslands, and coastline.<br />
+      Home to the elusive Sri Lankan leopard, it shelters diverse wildlife:
+      elephants, sloth bears, and vibrant birds.<br />
+      Yala offers more than safaris; it unveils stunning vistas and serene
+      moments amid changing ecosystems.<br />
+      Conservation efforts protect species and habitats, promoting
+      sustainability.<br />
+      Yala beckons exploration, weaving adventures, tranquility, and natural
+      marvels.<br />
+      Nature's symphony unfolds here, an enchanting sanctuary embodying Sri
+      Lanka's rich biodiversity.
+    </p>
+    <h2>WILDLIFE SPOTLIGHT</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/Sri_Lankan_leopard"
+          ><picture>
+            <source
+              media="(max-width:500px)"
+              srcset="
+                https://img.freepik.com/premium-photo/small-leopard-cub-walks-orange-grass-near-savannah-3d-illustration_76964-3652.jpg
+              "
+              class="round" />
+            <source
+              media="(max-width: 700px)"
+              srcset="
+                https://media.sciencephoto.com/c0/38/82/42/c0388242-800px-wm.jpg
+              "
+              class="round" />
+            <img src="/WDOS/WDOS Project/leopard (2).jpg" /></picture
+        ></a>
+        <h3>SRI LANKAN LEOPARD</h3>
+      </div>
+      <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/Asian_elephant">
+          <picture>
+            <source
+              media="(max-width:500px)"
+              srcset="
+                https://i.pinimg.com/originals/05/7c/d3/057cd31db65848a04941921ef6e92c5b.jpg
+              "
+              class="round" />
+            <source
+              media="(max-width: 700px)"
+              srcset="
+                https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sri_Lankan_elephant%2C_Udawalawe_NP.jpg/800px-Sri_Lankan_elephant%2C_Udawalawe_NP.jpg
+              "
+              class="round" />
+            <img src="/WDOS/WDOS Project/sl elephant.jpg" /></picture
+        ></a>
+        <h3>SRI LANKAN ELEPHANT</h3>
+      </div>
+      <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/Sri_Lanka_hanging_parrot">
+          <picture>
+            <source
+              media="(max-width:500px)"
+              srcset="
+                https://c4.wallpaperflare.com/wallpaper/593/551/607/photography-nature-animals-birds-wallpaper-thumb.jpg
+              "
+              class="round" />
+            <source
+              media="(max-width: 700px)"
+              srcset="
+                https://www.vogelwarte.ch/modx/assets/images/voegel/vds/artbilder/700px/3800_0.jpg
+              "
+              class="round" />
+            <img src="/WDOS/WDOS Project/sl bird.jpg" /></picture
+        ></a>
+        <h3>AVIAN VARIETY (SRI LANKAN HANGING PARROT)</h3>
+      </div>
+    </div>
+    <p class="rquickbox">
+      In the protective embrace of <b>Yala National Park,</b> Sri Lanka's
+      natural treasures thrive under careful stewardship.<br />
+      Here, the elusive <b>Sri Lankan leopard</b> finds sanctuary amidst varied
+      landscapes, benefiting from conservation efforts ensuring undisturbed
+      habitats.<br />
+      The park's gentle giants, the <b>Sri Lankan elephants,</b> roam freely,
+      sheltered within expansive woodlands and near water sources, safeguarded
+      from external threats.<br />
+      Yala's avian diversity, with over 200 bird species, enjoys the tranquility
+      of preserved ecosystems, offering nesting grounds and safe havens amidst
+      the diverse habitats.<br />
+      Through vigilant protection and habitat preservation, Yala stands as a
+      beacon of hope, fostering the coexistence and preservation of these iconic
+      species within its nurturing confines.
+    </p>
+    <h2>ENVIRONMENTAL CONSERVATION</h2>
+    <p class="rquickbox">
+      Yala National Park stands as a vanguard in environmental conservation,
+      championing diverse initiatives to safeguard Sri Lanka's natural
+      heritage.<br />
+      Through rigorous monitoring and anti-poaching efforts, Yala safeguards
+      endangered species, notably the Sri Lankan leopard, ensuring their
+      protected existence within the park's confines.<br />
+      Spearheading reforestation programs, Yala replenishes vital habitats,
+      fostering biodiversity and mitigating human-wildlife conflict.<br />
+      Collaborating with local communities, educational programs promote
+      sustainable practices, nurturing a shared commitment to preserving
+      ecosystems.<br />
+      Yala's pioneering efforts in waste management and eco-tourism initiatives
+      set a sustainable example, emphasizing the park's dedication to
+      conservation, securing a thriving environment for future generations to
+      cherish and protect.
+    </p>
+    <h2>TRAIL EXPERIENCES</h2>
+    <picture>
+      <source
+        media="(max-width:500px)"
+        srcset="
+          data:image/jpeg;base64,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
+        "
+        class="round" />
+      <source
+        media="(max-width: 700px)"
+        srcset="
+          https://i0.wp.com/magnificentsrilanka.com/wp-content/uploads/2020/07/800px-Adams_Peak-1.jpg?resize=768%2C1024&ssl=1
+        "
+        class="round" />
+      <img class="trail" src="/WDOS/WDOS Project/yala trail 12.jpg"
+    /></picture>
+    <p class="rquickbox">
+      Embark on an immersive journey through Yala National Park, where diverse
+      trails unveil nature's marvels.<br />
+      The park offers a mosaic of safari routes, each a gateway to stunning
+      landscapes and wildlife encounters.<br />
+      Traverse through verdant woodlands, witnessing the Sri Lankan leopard's
+      stealthy elegance and the gentle lumbering of Asian elephants near
+      watering holes.<br />
+      The park's safari expeditions reveal a symphony of avian varieties, from
+      vibrant Sri Lanka Blue Magpies to the melodious calls of endemic birds.<br />
+      With experienced guides unveiling hidden gems, these trails promise
+      adventure, awe-inspiring vistas, and moments of serenity, crafting
+      unforgettable experiences within Yala's captivating realms.
+    </p>
+    <script>
+      function searchTopic() {
+        var search = document.getElementById("search").value.toLowerCase();
+
+        if (search === "yala") {
+          alert("Results for 'YALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectYALA.html", "_blank");
+        } else if (search === "wilpattu") {
+          alert("Results for 'WILPATTU' found!");
+          window.open("/WDOS/WDOS Project/ProjectWILPATTU.html", "_blank");
+        } else if (search === "leopard") {
+          alert("Results for 'LEOPARD' found!");
+          window.open("/WDOS/WDOS Project/ProjectLEOPARD.html", "_blank");
+        } else if (search === "conservation") {
+          alert("Results for 'CONSERVATION' found!");
+          window.open("/WDOS/WDOS Project/ProjectCONSERVATION.html", "_blank");
+        } else if (search === "intro") {
+          alert("Results for 'INTRODUCTION' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "animals") {
+          alert("Results for 'ANIMALS' found!");
+          window.open("/WDOS/WDOS Project/ProjectANIMALS.html", "_blank");
+        } else if (search === "bundala") {
+          alert("Results for 'BUNDALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "horton") {
+          alert("Results for 'HORTON' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "minneriya") {
+          alert("Results for 'MINNERIYA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else {
+          alert("Topic not found!");
+          window.open("https://elgoog.im/terminal/", "_blank");
+        }
+      }
+    </script>
+  </body>
+  <footer class="footer">
+    <div class="fbody">
+      <p>&copy;WILDLIFE YALA</p>
+    </div>
+  </footer>
+</html>
