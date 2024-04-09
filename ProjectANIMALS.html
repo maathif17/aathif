@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="ProjectANIMALSCSS.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/WDOS/WDOS Project/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/WDOS/WDOS Project/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>ProjectANIMALS</title>
+    <h1>SRI LANKAN ANIMALS</h1>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li>
+          <a
+            title="Takes you to home page!"
+            href="/WDOS/WDOS Project/wdosproject.html"
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectINTRO.html">INTRO</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectCONSERVATION.html">CONSERVATION</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectLEOPARD.html">LEOPARD</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectANIMALS.html" class="active"
+            >ANIMALS</a
+          >
+          <ul class="AnimalOptions">
+            <li><a href="/WDOS/WDOS Project/ProjectYALA.html">YALA</a></li>
+            <li>
+              <a href="/WDOS/WDOS Project/ProjectWILPATTU.html">WILPATTU</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav search-bar">
+          <form action="/search" method="get">
+            <input
+              type="search"
+              id="search"
+              name="q"
+              placeholder="SEARCH"
+            /><br />
+            <input
+              type="image"
+              src="/WDOS/WDOS Project/search 16.png"
+              alt="Submit"
+              class="submit"
+              onclick="searchTopic()"
+            />
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <div class="gallery">
+      <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/Mugger_crocodile"
+          ><picture>
+            <source
+              media="(max-width:500px)"
+              srcset="
+                data:image/jpeg;base64,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
+              "
+              class="round" />
+            <source
+              media="(max-width: 700px)"
+              srcset="
+                https://media.istockphoto.com/id/153360600/photo/mugger-crocodile.jpg?s=612x612&w=0&k=20&c=nlglqsK8rF7_L8qxx8xcB2h8QtKkO1v5ltpvSvFCeM0=
+              "
+              class="round" />
+            <img src="/WDOS/WDOS Project/crocx.jpg" /></picture
+        ></a>
+        <h3>SRI LANKAN MARSH CROCODILE</h3>
+      </div>
+      <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/Fishing_cat">
+          <picture>
+            <source
+              media="(max-width:500px)"
+              srcset="
+                https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Fishing-Cat.jpg/220px-Fishing-Cat.jpg
+              "
+              class="round" />
+            <source
+              media="(max-width: 700px)"
+              srcset="
+                https://t3.ftcdn.net/jpg/04/24/77/62/360_F_424776218_YvRUGRUL9wZRVFfydWcEJxOms9tWZvNy.jpg
+              "
+              class="round" />
+            <img src="/WDOS/WDOS Project/fishing cat.jpg" /></picture
+        ></a>
+        <h3>SRI LANKAN FISHING CAT</h3>
+      </div>
+      <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/Sri_Lankan_junglefowl">
+          <picture>
+            <source
+              media="(max-width:500px)"
+              srcset="
+                https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Gallus_ecaudatus_Temminck-RMNH.AVES.224888.jpg/220px-Gallus_ecaudatus_Temminck-RMNH.AVES.224888.jpg
+              "
+              class="round" />
+            <source
+              media="(max-width: 700px)"
+              srcset="
+                https://www.openpoultrystandards.com/images/thumb/6/64/Red_Junglefowl_-_Thailand.jpg/400px-Red_Junglefowl_-_Thailand.jpg
+              "
+              class="round" />
+            <img src="/WDOS/WDOS Project/junglefowl.jpg" /></picture
+        ></a>
+        <h3>SRI LANKAN JUNGLEFOWL</h3>
+      </div>
+    </div>
+    <p class="quickbox">
+      Sri Lanka's biodiversity is rich, boasting a tapestry of indigenous
+      animals that thrive in its varied landscapes.<br />
+      Among the emblematic species is the Sri Lankan elephant (Elephas maximus
+      maximus), an icon revered for its cultural significance and sheer
+      magnificence.<br />
+      The Sri Lankan leopard (Panthera pardus kotiya) prowls through the
+      island's national parks,<br />
+      a symbol of stealth and grace in its natural habitat.<br />
+      The sloth bear (Melursus ursinus inornatus) meanders through the forests,
+      distinctive with its shaggy coat and ambling gait.<br />
+      Sri Lanka's diverse avian population includes the
+      <b>Sri Lanka junglefowl (Gallus lafayettii),</b> the resplendent national
+      bird, adorned with vibrant plumage.<br />
+      The red slender loris (Loris tardigradus) and purple-faced langur
+      (Semnopithecus vetulus) represent the island's primate diversity,<br />
+      captivating with their unique behaviors and appearances.<br />
+      The freshwater-dwelling <b>mugger crocodile (Crocodylus palustris)</b> and
+      the elusive <b>fishing cat (Prionailurus viverrinus)</b> add to the array
+      of unique creatures that call Sri Lanka home.<br />
+      These indigenous animals contribute to the island's ecological charm and
+      continue to captivate both locals and visitors,<br />
+      showcasing the country's commitment to biodiversity conservation.
+    </p>
+    <script>
+      function searchTopic() {
+        var search = document.getElementById("search").value.toLowerCase();
+
+        if (search === "yala") {
+          alert("Results for 'YALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectYALA.html", "_blank");
+        } else if (search === "wilpattu") {
+          alert("Results for 'WILPATTU' found!");
+          window.open("/WDOS/WDOS Project/ProjectWILPATTU.html", "_blank");
+        } else if (search === "leopard") {
+          alert("Results for 'LEOPARD' found!");
+          window.open("/WDOS/WDOS Project/ProjectLEOPARD.html", "_blank");
+        } else if (search === "conservation") {
+          alert("Results for 'CONSERVATION' found!");
+          window.open("/WDOS/WDOS Project/ProjectCONSERVATION.html", "_blank");
+        } else if (search === "intro") {
+          alert("Results for 'INTRODUCTION' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "animals") {
+          alert("Results for 'ANIMALS' found!");
+          window.open("/WDOS/WDOS Project/ProjectANIMALS.html", "_blank");
+        } else if (search === "bundala") {
+          alert("Results for 'BUNDALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "horton") {
+          alert("Results for 'HORTON' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "minneriya") {
+          alert("Results for 'MINNERIYA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else {
+          alert("Topic not found!");
+          window.open("https://elgoog.im/terminal/", "_blank");
+        }
+      }
+    </script>
+  </body>
+  <footer class="footer">
+    <div class="fbody">
+      <p>&copy;WILDLIFE ANIMALS</p>
+    </div>
+  </footer>
+</html>

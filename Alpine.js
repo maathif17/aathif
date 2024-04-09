@@ -1,0 +1,34 @@
+const fetchedData = {
+    sections: [
+        {
+            title: "INTERACTIVE MAP",
+            content: "Explore the diverse habitats of Sri Lanka's wildlife through our interactive map!"
+        },
+        {
+            title: "UNIQUE BIODIVERSITY",
+            content: "Sri Lanka, a treasure trove of biodiversity, houses an incredible array of wildlife and ecosystems."
+        },
+        {
+            title: "MOST ENDANGERED ANIMALS IN SRI LANKA",
+            content: "SLOTH BEAR",
+            description: "The sloth bear, indigenous to Sri Lanka, faces severe endangerment due to habitat loss and human-wildlife conflict. Encroachment into their territories for agriculture and urbanization poses a threat, compounded by poaching and retaliatory killings. Conservation efforts aim to mitigate conflicts and preserve their dwindling natural habitats."
+        },
+        {
+            title: "SRI LANKAN BIRDLIFE",
+            content: "SRI LANKAN BLUE MAGPIE",
+            description: "The Sri Lankan Blue Magpie, endemic to the island's forests, flaunts vibrant blue plumage and a long tail, captivating with its distinctive appearance. Endangered due to habitat loss and illegal capture for the pet trade, conservation efforts aim to preserve this striking bird, vital to Sri Lanka's unique biodiversity."
+        },
+        {
+            title: "IMPORTANCE OF BIRD SANCTUARIES",
+            content: "Sri Lanka's bird sanctuaries, diverse and plentiful, safeguard the island's avian wealth. These sanctuaries span vast habitats, from lush wetlands to dense forests, serving as critical refuges for numerous bird species. Essential for breeding, migration, and protection, they play a pivotal role in conserving the island's rich avifauna and fostering ecotourism."
+        },
+        {
+            title: "BIRDWATCHING OPPORTUNITES ACROSS THE COUNTRY",
+            content: "Sri Lanka offers exceptional bird watching experiences, presenting diverse ecosystems brimming with avian life. From the renowned Sinharaja Rainforest to serene wetlands like Bundala, these locations showcase a plethora of bird species. Expert-guided tours across the country ensure encounters with unique and vibrant avifauna, making it a paradise for bird enthusiasts."
+        }
+    ]
+};
+
+Alpine.data('wildlifeData', () => ({
+    sections: fetchedData.sections
+}));
