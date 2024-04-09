@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="wdosprojectcss.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/WDOS/WDOS Project/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/WDOS/WDOS Project/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>ProjectHOME</title>
+    <h1>HOME OF SRI LANKAN WILDLIFE</h1>
+</head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li>
+          <a
+            title="Takes you to home page!"
+            href="/WDOS/WDOS Project/wdosproject.html"
+            class="active"
+            >HOME</a
+          >
+        </li>
+        <li><a href="/WDOS/WDOS Project/ProjectINTRO.html">INTRO</a></li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectCONSERVATION.html">CONSERVATION</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectLEOPARD.html">LEOPARD</a>
+        </li>
+        <li>
+          <a href="/WDOS/WDOS Project/ProjectANIMALS.html">ANIMALS</a>
+          <ul class="AnimalOptions">
+            <li><a href="/WDOS/WDOS Project/ProjectYALA.html">YALA</a></li>
+            <li>
+              <a href="/WDOS/WDOS Project/ProjectWILPATTU.html">WILPATTU</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="ProjectLOGIN.html">LOGIN</a></li>
+        <li class="nav search-bar">
+          <form action="/search" method="get">
+            <input
+              type="search"
+              id="search"
+              name="q"
+              placeholder="SEARCH"
+            /><br />
+            <input
+              type="image"
+              src="/WDOS/WDOS Project/search 16.png"
+              alt="Submit"
+              class="submit"
+              onclick="searchTopic()"
+            />
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <br /><br />
+    <img
+      src="/WDOS/WDOS Project/sri lankas.png"
+      class="srilankamap"
+      usemap="#srilanka"
+    />
+    <div class="custom-cursor"></div>
+    <map name="srilanka">
+      <area
+        target="_blank"
+        alt="YALA NATIONAL PARK "
+        title="YALA NATIONAL PARK "
+        href="/WDOS/WDOS Project/ProjectYALA.html"
+        coords="346,553,326,578,326,607,336,638,346,637,360,632,372,624,384,617,394,607,410,599,428,579,437,555,400,513"
+        shape="poly"
+        onclick="Yala()"
+      />
+      <area
+        target="_blank"
+        alt="WILPATTU NATIONAL PARK"
+        title="WILPATTU NATIONAL PARK"
+        href="/WDOS/WDOS Project/ProjectWILPATTU.html"
+        coords="145,217,177,205,196,249,175,301,156,326,120,297,128,248"
+        shape="poly"
+        onclick="Wilpattu()"
+      />
+      <area
+        target="_blank"
+        alt="LEOPARD"
+        title="LEOPARD"
+        href="/WDOS/WDOS Project/ProjectLEOPARD.html"
+        coords="267,405,296,454,260,489,224,513,201,478,201,437,226,405"
+        shape="poly"
+        onclick="Leopard()"
+      />
+      <area
+        target="_blank"
+        alt="BUNDALA NATIONAL PARK"
+        title="BUNDALA NATIONAL PARK"
+        href="/WDOS/WDOS Project/ProjectINTRO.html"
+        coords="320,597,292,607,290,646,299,645,311,648,336,645"
+        shape="poly"
+        onclick="Bundala()"
+      />
+      <area
+        target="_blank"
+        alt="MINNERIYA NATIONAL PARK"
+        title="MINNERIYA NATIONAL PARK"
+        href="/WDOS/WDOS Project/ProjectINTRO.html"
+        coords="257,345,276,378,305,375,325,348,305,298,273,298"
+        shape="poly"
+        onclick="Minneriya()"
+      />
+      <area
+        target="_blank"
+        alt="HORTON PLAINS NATIONAL PARK"
+        title="HORTON PLAINS NATIONAL PARK"
+        href="/WDOS/WDOS Project/ProjectINTRO.html"
+        coords="300,557,262,575,246,540,269,511,296,521"
+        shape="poly"
+        onclick="Horton()"
+      />
+    </map>
+    <div x-text="wildlifeData.json" class="editable-content"></div>
+    <h2>INTERACTIVE MAP</h2>
+    <p class="first">
+      Explore the diverse habitats of Sri Lanka's wildlife through our
+      interactive map!<br />
+      Uncover the territories of majestic leopards and delve into the lush
+      landscapes<br />
+      of Yala and Wilpattu National Parks.<br />
+      Navigate these regions, discover their unique ecosystems,<br />
+      and learn about the incredible biodiversity they harbor. <br />
+      Our interactive map offers a glimpse into these habitats,<br />
+      providing an immersive experience that highlights the natural beauty<br />
+      and significance of these regions for wildlife conservation.<br />
+      Join us on a virtual journey through these iconic areas,<br />
+      where nature thrives and the captivating lives of Sri Lanka's wildlife
+      unfold.
+    </p>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div></div>
+    <h2>UNIQUE BIODIVERSITY</h2>
+    <p class="first">
+      Sri Lanka, a treasure trove of biodiversity, houses an incredible array of
+      wildlife and ecosystems.<br />
+      From the dense jungles to the pristine coastline, this island nation
+      boasts a rich tapestry of flora and fauna found nowhere else on Earth.<br />
+      The diverse landscapes, including lush rainforests, arid plains, and
+      serene wetlands, provide habitats for an astounding variety of species,<br />
+      from the elusive sloth bear to the vibrant array of birdlife.
+    </p>
+    <br /><br />
+    <picture>
+      <source
+        media="(max-width: 500px)"
+        srcset="
+          https://biodiversitysrilanka.org/old/wp-content/uploads/2017/05/261d68218c77a9ac02b3045e426b4d27_L.jpg
+        "
+        class="round"
+      />
+      <source
+        media="(max-width: 700px)"
+        srcset="
+          https://www.worldbank.org/content/dam/photos/780x439/2017/may-7/lka-waterfall.jpg
+        "
+        class="round"
+      />
+      <img
+        src="/WDOS/WDOS Project/sri lanka scenery pc (1).jpg"
+        class="round"
+      /> </picture
+    ><br /><br />
+    <p class="first">
+      Preserving the natural ecosystems of Sri Lanka is a vital endeavor in
+      safeguarding the country's ecological heritage. <br />Conservation efforts
+      span across national parks, protected reserves, and community-driven
+      initiatives,<br />
+      aiming to sustain the delicate balance of these ecosystems.<br />
+      These endeavors are not merely about protecting wildlife; they're about
+      nurturing a delicate equilibrium that supports<br />
+      countless species while ensuring the well-being of local communities.
+    </p>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div></div>
+    <h3>MOST ENDANGERED ANIMALS IN SRI LANKA</h3>
+    <ol>
+      <li class="ordered">SLOTH BEAR</li>
+      <picture>
+        <source
+          media="(max-width:500px)"
+          srcset="
+            https://www.internationalanimalrescue.org/sites/default/files/styles/large/public/2022-01/Gulabo%20was%20a%20blind%20bear%20rescued%20by%20%20Wildlife%20SOS%20from%20the%20dancing%20bear%20trade.jpg?itok=-mmuYbop
+          "
+          class="round"
+        />
+        <source
+          media="(max-width: 700px)"
+          srcset="https://df4gcsff7xjx7.cloudfront.net/2018/09/DSC_1503.jpg"
+          class="round"
+        />
+        <img src="/WDOS/WDOS Project/sloth bear pc 2 (1).jpg" class="round" />
+      </picture>
+      <p class="second">
+        The sloth bear, indigenous to Sri Lanka, faces severe endangerment due
+        to habitat loss and human-wildlife conflict.<br />Encroachment into
+        their territories for agriculture and urbanization poses a threat,
+        compounded by poaching and retaliatory killings.<br />Conservation
+        efforts aim to mitigate conflicts and preserve their dwindling natural
+        habitats.
+      </p>
+      <li class="ordered">TOQUE MACAQUE</li>
+      <picture>
+        <source
+          media="(max-width:500px)"
+          srcset="
+            https://dmc.dilmahtea.com/web-space/dmc/animals/fe5dbbcea5ce7e2988b8c69bcfdfde8904aabc1f/147818148631042.png
+          "
+          class="round"
+        />
+        <source
+          media="(max-width: 700px)"
+          srcset="
+            https://s3.animalia.bio/animals/photos/full/1.25x1/dsc-3634.webp
+          "
+          class="round"
+        />
+        <img src="/WDOS/WDOS Project/toque macaque pc (1).jpg" class="round" />
+      </picture>
+      <p class="second">
+        The toque macaque, an endemic species in Sri Lanka, grapples with
+        habitat fragmentation and human intrusion.<br />Rapid deforestation and
+        land conversion for agriculture encroach upon their habitats, leading to
+        population decline.<br />Conservation initiatives focus on protecting
+        remaining forested areas and mitigating human-animal conflicts to
+        safeguard this endangered primate species.
+      </p>
+      <li class="ordered">PURPLE-FACED LANGUR</li>
+      <picture>
+        <source
+          media="(max-width:500px)"
+          srcset="
+            https://dmc.dilmahtea.com/web-space/dmc/animals/b3f0c7f6bb763af1be91d9e74eabfeb199dc1f1f/147990727757814.png
+          "
+          class="round"
+        />
+        <source
+          media="(max-width: 700px)"
+          srcset="
+            https://i.pinimg.com/736x/60/d1/22/60d122e4bb7d67ba8e3bdc501a8c70f0.jpg
+          "
+          class="round"
+        />
+        <img src="/WDOS/WDOS Project/purple langur pc (1).jpg" class="round" />
+      </picture>
+      <p class="second">
+        The purple-faced langur, critically endangered in Sri Lanka, faces
+        severe threats due to habitat loss, mainly from deforestation and human
+        activities.<br />Fragmented forests disrupt their movement and feeding
+        patterns, posing a significant challenge to their survival.<br />Conservation
+        efforts aim to restore habitats and mitigate human encroachment to
+        secure the future of this unique primate species.
+      </p>
+    </ol>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div></div>
+    <h2>SRI LANKAN BIRDLIFE</h2>
+    <ul>
+      <li class="unordered">SRI LANKAN BLUE MAGPIE</li>
+      <picture>
+        <source
+          media="(max-width:500px)"
+          srcset="
+            https://www.oiseaux-birds.com/passeriformes/corvides/pirolle-ceylan/pirolle-ceylan-sg2.jpg
+          "
+          class="round"
+        />
+        <source
+          media="(max-width: 700px)"
+          srcset="
+            https://cdn.download.ams.birds.cornell.edu/api/v1/asset/252002621/1800
+          "
+          class="round"
+        />
+        <img src="/WDOS/WDOS Project/sl blue magpie pc (1).jpg" class="round" />
+      </picture>
+      <p class="second">
+        The Sri Lankan Blue Magpie, endemic to the island's forests, flaunts
+        vibrant blue plumage and a long tail, captivating with its distinctive
+        appearance.<br />Endangered due to habitat loss and illegal capture for
+        the pet trade, conservation efforts aim to preserve this striking bird,
+        vital to Sri Lanka's unique biodiversity.
+      </p>
+      <li class="unordered">IMPORTANCE OF BIRD SANCTUARIES</li>
+      <picture>
+        <source
+          media="(max-width:500px)"
+          srcset="https://www.responsibletravel.com/imagesClient/S_152908.jpg"
+          class="round"
+        />
+        <source
+          media="(max-width: 700px)"
+          srcset="
+            https://www.srilankaecotourism.lk/location_img/1489653860kalamatiya_4.jpg
+          "
+          class="round"
+        />
+        <img
+          src="/WDOS/WDOS Project/bird sanctuary pc 2 (1).jpg"
+          class="round"
+        />
+        <p class="second">
+          Sri Lanka's bird sanctuaries, diverse and plentiful, safeguard the
+          island's avian wealth.<br />These sanctuaries span vast habitats, from
+          lush wetlands to dense forests, serving as critical refuges for
+          numerous bird species.<br />Essential for breeding, migration, and
+          protection, they play a pivotal role in conserving the island's rich
+          avifauna and fostering ecotourism.
+        </p>
+      </picture>
+      <li class="unordered">BIRDWATCHING OPPORTUNITES ACROSS THE COUNTRY</li>
+      <picture>
+        <source
+          media="(max-width:500px)"
+          srcset="
+            https://www.greaterseattleonthecheap.com/wordpress/wp-content/uploads/2020/01/Depositphotos_94828372_l-2015-birdwatching-with-binoculars.jpg
+          "
+          class="round"
+        />
+        <source
+          media="(max-width: 700px)"
+          srcset="https://duqjpivknq39s.cloudfront.net/2019/03/800x750-53.jpg"
+          class="round"
+        />
+        <img src="/WDOS/WDOS Project/bird watching pc (1).jpg" class="round" />
+      </picture>
+      <p class="second">
+        Sri Lanka offers exceptional bird watching experiences, presenting
+        diverse ecosystems brimming with avian life.<br />From the renowned
+        Sinharaja Rainforest to serene wetlands like Bundala, these locations
+        showcase a plethora of bird species.<br />Expert-guided tours across the
+        country ensure encounters with unique and vibrant avifauna, making it a
+        paradise for bird enthusiasts.
+      </p>
+    </ul>
+    <div x-data="{ wildlifeData: [] }">
+      <template x-for="section in wildlifeData.sections" :key="section.title">
+        <div>
+          <h2 x-text="section.title"></h2>
+          <p x-text="section.content"></p>
+          <p x-text="section.description" x-if="section.description"></p>
+        </div>
+      </template>
+    </div>
+    <script src="Alpine.js" defer></script>
+    <script>
+      function Yala() {
+        alert("You clicked the Yala Region!");
+      }
+    </script>
+    <script>
+      function Wilpattu() {
+        alert("You clicked the Wilpattu Region!");
+      }
+    </script>
+    <script>
+      function Leopard() {
+        alert("You clicked the Leopard Region!");
+      }
+    </script>
+    <script>
+      function Bundala() {
+        alert("You clicked the Bandala Region!");
+      }
+    </script>
+    <script>
+      function Minneriya() {
+        alert("You clicked the Minneriya Region!");
+      }
+    </script>
+    <script>
+      function Horton() {
+        alert("You clicked the Horton Region!");
+      }
+    </script>
+    <script>
+      function searchTopic() {
+        var search = document.getElementById("search").value.toLowerCase(); 
+        if (search === "yala") {
+          alert("Results for 'YALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectYALA.html", "_blank");
+        } else if (search === "wilpattu") {
+          alert("Results for 'WILPATTU' found!");
+          window.open("/WDOS/WDOS Project/ProjectWILPATTU.html", "_blank");
+        } else if (search === "leopard") {
+          alert("Results for 'LEOPARD' found!");
+          window.open("/WDOS/WDOS Project/ProjectLEOPARD.html", "_blank");
+        } else if (search === "conservation") {
+          alert("Results for 'CONSERVATION' found!");
+          window.open("/WDOS/WDOS Project/ProjectCONSERVATION.html", "_blank");
+        } else if (search === "intro") {
+          alert("Results for 'INTRODUCTION' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "animals") {
+          alert("Results for 'ANIMALS' found!");
+          window.open("/WDOS/WDOS Project/ProjectANIMALS.html", "_blank");
+        } else if (search === "bundala") {
+          alert("Results for 'BUNDALA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "horton") {
+          alert("Results for 'HORTON' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else if (search === "minneriya") {
+          alert("Results for 'MINNERIYA' found!");
+          window.open("/WDOS/WDOS Project/ProjectINTRO.html", "_blank");
+        } else {
+          alert("Topic not found!");
+          window.open("https://elgoog.im/terminal/", "_blank");
+        }
+      }
+    </script>
+    <script>
+      document.getElementById("SubscriptionForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var email = document.getElementById("email").value;
+        localStorage.setItem("SubscriptionEmail", email);
+        alert("You subscribed!");
+      });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.8/dist/cdn.min.js"></script>
+        <script>
+          fetch('WildlifeJSON.json')
+              .then(response => response.json())
+              .then(data => {
+                  Alpine.store('jsonData', data);
+              });
+      </script>
+      <script src="WildlifeScript.js"></script>
+  </body>
+  <footer class="footer">
+    <div class="fbody">
+      <form id="SubscriptionForm">
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p>&copy;WILDLIFE HOME</p>
+    </div>
+  </footer>
+</html>

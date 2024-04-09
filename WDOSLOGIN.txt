@@ -1,0 +1,1 @@
+so now when i login as admin through login page, the contenteditorhtml pops up, allows me to vicariously change the content of wildlifejson through it and save changes? http://localhost:8000
